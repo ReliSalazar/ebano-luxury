@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  /* font-family: "Montserrat"; */
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  background-image: url("background.webp");
+  background-color: #222;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  color: white;
+}
+
+::moz-selection {
+  color: white;
+  background-color: #5c95ff;
+}
+::selection {
+  color: white;
+  background-color: #5c95ff;
+}
+
+.fade-in {
+  animation: section-fade-in 0.35s ease;
+}
+
+@keyframes section-fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-out {
+  animation: section-fade-out 0.35s ease;
+}
+
+@keyframes section-fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.button {
+  border: 1px solid #554b45;
+  padding: 0.5rem 2rem;
+  transition: all 0.35s ease;
+}
+.button:hover {
+  background-color: #554b45;
+}
+
+.custom-underline {
+  position: relative;
+}
+.custom-underline::after {
+  content: "";
+  position: absolute;
+  left: 20%;
+  bottom: -10px;
+  height: 2px;
+  width: 60%;
+  background-color: white;
+}
