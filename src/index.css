@@ -10,7 +10,7 @@
 }
 
 html {
-  background-image: url("background.webp");
+  background-image: url("/background.webp");
   background-color: #222;
   background-repeat: no-repeat;
   background-size: cover;
